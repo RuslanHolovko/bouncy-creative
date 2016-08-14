@@ -1,0 +1,277 @@
+html{height: 100%;}
+*{
+	margin: 0;
+	padding: 0;
+}
+body{font-family: 'OpenSans-Light',Arial,Helvetica,sans-serif;
+font-size: 14px;}
+a{text-decoration: none;}
+li{list-style: none;}
+
+.wrapper{
+	max-width: 1169px;
+	margin: 0 auto;
+	}
+
+.wrapper-2{
+	margin: 0 auto;
+	max-width: 1280px;
+}
+
+.style-h{
+	color: #333b46;
+	font-size: 20px;
+	letter-spacing: 4px;  
+	margin: 0 auto;
+	width: 324px;
+}
+
+.style-p{
+	margin:  40px auto 0;
+	text-align: center;
+	width: 450px;
+}
+
+h1,h2,h3,h4,h5,h6{text-transform: uppercase;}
+/*FONTS============================================*/
+@font-face{
+font-family: OpenSans-Light;
+src: url(fonts/); /*для internet explorer*/
+src: local('?'),
+url(fonts/) format('woff'),
+url('../fonts/OpenSans-Light.ttf') format('truetype'),
+url(fonts/) format('svg');
+font-weight: normal;
+font-style: normal;
+}
+/*FONTS============================================*/
+/*Slider begin=====================================*/
+
+#slider,
+#bounci{
+min-width: 800px;
+padding: 80px 100px;
+}
+
+#slider{
+	background: url(../img/bg-slider.jpg) no-repeat;
+	font-size: 16px;
+	height: 737px;
+  background-size: cover;
+}
+
+#slider .logo{
+	float: left;
+	width: 124px;
+}
+
+nav{
+	float: right;
+}
+
+nav a{
+	color: #fff;
+	display: block;
+	transition: .1s;
+}
+
+nav a:hover{
+	transform:  translateX(8px);
+	display: block;
+}
+
+nav a.active{
+	border-radius: 17px;
+	border: 1px solid #fff;
+	color: #fff;
+	display: block;
+	padding: 5px 20px;
+}
+
+#slider ul li{
+	display: inline-block;
+	margin-left: 30px;
+}
+
+#code-cafe{
+	color: #fff;
+	font-size: 16px;
+	margin: 0 auto;
+	padding-top: 256px;
+	text-align: center;
+	width: 685px;
+}
+
+#code-cafe .pe-7s-angle-down{
+	opacity: .5;
+	overflow: hidden;
+	background: rgba(97, 255, 218, 0.27);
+	border-radius: 25px;
+	border: none;
+	font-size: 36px;
+	height: 35px;
+	margin: 224px auto 0; 
+	padding: 3px;
+	width: 35px;
+	transition: .3s;
+}
+
+#code-cafe .pe-7s-angle-down:hover{
+	transform: translateX(20);
+	opacity: 1;
+	overflow: visible;
+	background: transparent;
+	border-radius: 25px;
+	border: none;
+	font-size: 36px;
+	height: 1px;
+	margin: 224px auto 0; 
+	padding: 20px 3px 3px 3px;
+	width: 35px;
+}
+
+
+
+
+
+#code-cafe h1{
+	font-size: 35px;
+	letter-spacing: 7px;
+	font-weight: normal;
+}
+
+#code-cafe p{
+	margin-top: 38px;
+	line-height: 28px;
+	letter-spacing: 2px;
+}
+/*Slider end=====================================*/
+
+/*bounci begin===================================*/
+#bounci{
+	background: #fff;
+}
+
+#bounci h2{
+	color: #333b46;
+	font-size: 20px;
+	letter-spacing: 4px;	
+}
+
+
+
+#bounci p{
+	margin-top: 48px;
+	line-height: 25px;
+	letter-spacing: 1px;
+}
+
+#bounci a{
+	text-transform: capitalize;
+	display: inline-block;
+	margin-top: 60px;
+	border: 1px solid #333b46;
+	border-radius: 50px; 
+	padding: 6px 28px;
+	color: #333b46;
+	font-size: 16px;
+	transition: .2s;
+}
+
+#bounci a:hover{
+	text-transform: capitalize;
+	display: inline-block;
+	margin-top: 60px;
+	border: 1px solid #19bd9a;
+	border-radius: 50px; 
+	padding: 6px 28px;
+	color: #19bd9a;
+	font-size: 16px;
+}
+
+#bounci .left{
+	float: left;
+	width: 50%;
+}
+
+#bounci img{
+	float: right;
+}
+/*bounci end=========================================*/
+
+/*details begin======================================*/
+#details{
+	background: #fff;
+	min-width: 1000px;
+	padding: 80px 0;
+}
+
+#details .icons{
+	margin: 0 auto;
+	width: 202px;
+}
+
+.icons a{
+	color: #fff;
+	text-align: center;
+	padding: 12px 6px 0px;
+	font-size: 29px;
+	background: #19bd9a;
+	border-radius: 50px;
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+}
+
+#details table{
+	width: 100%;
+}
+
+#details table  td{
+	width: 50%;
+}
+
+
+@media screen and (max-width: 320px){
+	
+	#slider ul li {
+  display: inline-block;
+  margin-left: 18px;
+}
+
+nav{
+	margin-top: 40px;
+}
+
+nav a{
+	font-size: 29px;
+}
+
+
+
+
+}
+
+
+
+
+
+/*CLEARFIX=======================================*/
+
+
+#details:before,
+#details:after,
+#slider:before,
+#slider:after,
+#bounci:before,
+#bounci:after {
+   content: "";
+   display: table;
+}
+
+#details:after,
+#slider:after,
+#bounci:after {
+   clear: both;
+}
+/*END CLEARFIX===================================*/
